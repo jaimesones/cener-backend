@@ -21,7 +21,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copia el archivo JAR generado desde la fase de construcción
-COPY --from=build /app/target/cener-backend<-1.1.0-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/cener-backend-1.1.0-SNAPSHOT.jar app.jar
 
 # Expone el puerto en el que correrá la aplicación
 EXPOSE 8080
